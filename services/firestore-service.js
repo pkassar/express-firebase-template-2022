@@ -60,7 +60,7 @@ async function fetchProducts() {
     console.log("FETCHING PRODUCTS...")
 
     // see: https://googleapis.dev/nodejs/firestore/latest/CollectionReference.html#get
-    var docs = await db.collection("products").get()
+    var docs = await db.collection("NFTs").get()
     console.log("DOCS:", docs.size)
 
     var products = parseDocs(docs)
