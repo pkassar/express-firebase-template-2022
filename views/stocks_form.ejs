@@ -1,20 +1,20 @@
 
-<h2>Stocks Form</h2>
+<h2>Cryptocurrency data</h2>
 
-<p>Request some stock market data...</p>
+<p>Request latest closing values of the top 3 cryptocurrencies. Bitcoin, Ethereum or Solana</p>
 
 <form action="/stocks/dashboard" method="POST">
 
-    <label>Stock Symbol:</label>
-    <input type="text" name="symbol" placeholder="MSFT" value="MSFT">
+    <label>Cryptocurrency Symbol:</label>
+    <input type="text" name="symbol" placeholder="BTC" value="BTC">
     <br>
 
-    <label>Risk Tolerance:</label>
+    <!-- <label>Risk Tolerance:</label>
     <select name="risk_level">
         <option value="high">High</option>
         <option value="medium">Medium</option>
         <option value="low">Low</option>
-    </select>
+    </select> -->
     <br>
 
     <button>Submit</button>
