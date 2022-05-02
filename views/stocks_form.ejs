@@ -6,15 +6,15 @@
 <form action="/stocks/dashboard" method="POST">
 
     <label>Cryptocurrency Symbol:</label>
-    <input type="text" name="symbol" placeholder="BTC" value="BTC">
+    <!-- <input type="text" name="symbol" placeholder="BTC" value="BTC"> -->
     <br>
 
-    <!-- <label>Risk Tolerance:</label>
-    <select name="risk_level">
-        <option value="high">High</option>
-        <option value="medium">Medium</option>
-        <option value="low">Low</option>
-    </select> -->
+    <label>Risk Tolerance:</label>
+    <select name="symbol" name="risk_level">
+        <option value="BTC">Bitcoin</option>
+        <option value="ETH">Ethereum</option>
+        <option value="SOL">Solana</option>
+    </select>
     <br>
 
     <button>Submit</button>
