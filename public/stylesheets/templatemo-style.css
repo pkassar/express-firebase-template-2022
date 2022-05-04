@@ -8,27 +8,29 @@ https://templatemo.com/tm-531-reflux
 
 @import url(fontawesome.css);
 @import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
-:root{
-    
+
+:root {
+
     --pk-purple: #635bff;
     --pk-blue: #19d4ff;
     --pk-navy: #092540;
-    
+
     --pk-purple-rgb: 99,
-    91,
-    255;
+        91,
+        255;
     --pk-blue-rgb: 25,
-    212,
-    255;
+        212,
+        255;
     --pk-navy-rgb: 9,
-    37,
-    64;
+        37,
+        64;
 }
 
 body {
     font-family: 'Lato', sans-serif;
 }
-body{
+
+body {
     margin-top: 0px
 }
 
@@ -165,7 +167,7 @@ html {
     height: 140px;
     border-radius: 50%;
     text-align: center;
-    transform: scale(1.75,1.75);
+    transform: scale(1.75, 1.75);
     /* z-index: 999; */
 }
 
@@ -254,7 +256,7 @@ html {
     box-sizing: border-box;
     height: 100vh;
     max-height: 100vh !important;
-    max-width: 80vw !important;
+    max-width: 180vw !important;
     min-width: 45px !important;
     outline: none;
     overflow-x: hidden !important;
@@ -266,12 +268,12 @@ html {
     will-change: transform;
     z-index: 9999 !important;
 
-  background: url(../images/page3-bg.jpeg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  width: 100%;
+    background: url(../images/page3-bg.jpeg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* width: 100%; */
 
 
 }
@@ -861,4 +863,3 @@ section.contact-me {
         margin-bottom: 20px;
     }
 }
-
