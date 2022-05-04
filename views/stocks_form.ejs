@@ -1,23 +1,31 @@
+ <section class="about-me" data-section="section1">
+
+     <div style="padding: 80px 45px;">
 
 
-<h2>Cryptocurrency data</h2>
 
-<p>Request latest closing values of the top 3 cryptocurrencies. Bitcoin, Ethereum or Solana</p>
 
-<form action="/stocks/dashboard" method="POST">
+         <h2>Cryptocurrency data</h2>
 
-    <label>Cryptocurrency Symbol:</label>
-    <!-- <input type="text" name="symbol" placeholder="BTC" value="BTC"> -->
-    <br>
-    <br>
-    <br>
+         <p>Request latest closing values of the top 3 cryptocurrencies. Bitcoin, Ethereum or Solana</p>
 
-    <select name="symbol" name="risk_level">
-        <option value="BTC">Bitcoin</option>
-        <option value="ETH">Ethereum</option>
-        <option value="SOL">Solana</option>
-    </select>
-    <br>
+         <form action="/stocks/dashboard" method="POST">
 
-    <button>Submit</button>
-</form>
+             <label>Cryptocurrency Symbol:</label>
+             <!-- <input type="text" name="symbol" placeholder="BTC" value="BTC"> -->
+             <br>
+             <br>
+             <br>
+
+             <select style="margin-bottom: 30px" name="symbol" name="risk_level">
+                 <option value="BTC">Bitcoin</option>
+                 <option value="ETH">Ethereum</option>
+                 <option value="SOL">Solana</option>
+             </select>
+             <br>
+
+             <button>Submit</button>
+         </form>
+     </div>
+
+ </section>
