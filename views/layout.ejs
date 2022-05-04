@@ -45,29 +45,24 @@
                         <ul class="main-menu">
                             <li><a href="/about">Home</a></li>
                             <li><a href="/products">NFT</a></li>
-                            <li><a href="stocks/form">Crypto</a></li>
+                            <li><a href="/stocks/form">Crypto</a></li>
+                            <% if (locals.user) { %>
 
+                            <li><a href="/user/orders">Orders</a></li>
+                            Welcome back!
+                            <a href="/user/profile" style="padding:5px;">
+                                
+                                <br>
+                                <img class="rounded-circle dpphoto"
+                                    src="<%= locals.user.picture || 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png' %>"
+                                    alt="profile photo">
+                            </a>
+                            <%} else { %>
+                            <li><a href="/login">Login</a></li>
+                            <% } %>
                         </ul>
                     </nav>
-                    <!-- <div class="social-network">
-                        <ul class="soial-icons">
-                            <li>
-                                <a href="https://fb.com/templatemo"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-rss"></i></a>
-                            </li>
-                        </ul>
-                    </div> -->
+
                     <div class="copyright-text">
                         <p>Copyright 2019 Reflux Design</p>
                     </div>
