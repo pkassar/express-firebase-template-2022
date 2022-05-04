@@ -4,7 +4,7 @@ const { getFirestore, Timestamp } = require('firebase-admin/firestore');
 
 const serviceAccountCreds = require('../google-credentials.json'); // assumes you downloaded the credentials file here
 
-initializeApp({credential: cert(serviceAccountCreds)});
+initializeApp({ credential: cert(serviceAccountCreds) });
 
 const db = getFirestore();
 
@@ -12,7 +12,7 @@ const db = getFirestore();
 // HELPER FUNCTIONS
 //
 
-function generateTimestamp(myDate=null){
+function generateTimestamp(myDate = null) {
     myDate = myDate || new Date()
     //var orderAt = parseInt(myDate.toFixed()) //> 1650567072343
     //var orderAt = myDate.toUTCString() //> 'Thu, 21 Apr 2022 18:51:49 GMT'
@@ -35,7 +35,7 @@ function parseDocs(documents) {
 
     // need to for loop because these objects don't respect map operation, and array conversion doesn't work
     var objects = []
-    documents.forEach(function(document){
+    documents.forEach(function (document) {
         //console.log("DOC ID:", document.id, "DATA", document.data())
         objects.push(parseDoc(document))
     })
@@ -81,7 +81,7 @@ async function fetchUserOrders(userEmail) {
     console.log("ORDERS:", orders.length)
 
 
-    orders = orders.sort(function(a,b){
+    orders = orders.sort(function (a, b) {
         // these will be firestore Timestamp objects, so let's convert them to dates
         return b["order_at"] - a["order_at"]
         //return b["order_at"].toDate() - a["order_at"].toDate()
@@ -108,4 +108,4 @@ async function createOrder(userEmail, productInfo) {
 
 
 
-module.exports = {db, fetchProducts, createOrder, fetchUserOrders}
+module.exports = { db, fetchProducts, createOrder, fetchUserOrders }
