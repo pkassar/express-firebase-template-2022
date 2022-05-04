@@ -5,7 +5,16 @@
 <div id="chart-container" height="700px"></div>
 
 <div>
-    <p>Coming soon: Functionality to purchase cryptocurrencies</p>
+    
+    <form action="/user/orders/create" method="POST">
+        <input type="hidden" name="product_id" value="<%- symbol %>">
+        <input type="hidden" name="product_name" value="<%- symbol %>">
+        <input type="hidden" name="product_description" value="'<%- symbol %>'">
+        <input type="hidden" name="product_price" value="<%= latestClose %>">
+        <input type="hidden" name="product_url" value="---">
+        <p>Don't wait! 1<%= symbol %> for the exclusive price of: $<%= latestClose %></p>
+        <button class="btn btn-primary">Order Now!</button>
+    </form>
 </div>
 
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
